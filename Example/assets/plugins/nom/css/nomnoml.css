@@ -1,0 +1,29 @@
+
+html, body {
+	
+	overflow-x: hidden;
+	overflow-y: hidden;
+	background: #fdf6e3;
+}
+hr {
+	border: 0;
+	background: #fdf6e3;
+	height: 5px;
+}
+.wrap {
+	position: relative;
+}
+
+#canvas {
+	position: absolute;
+}
+a, a:active {
+	color: #000;
+	opacity: 0.5;
+	text-decoration: none
+}
+a:hover {
+	color: #000;
+	opacity: 0.75;
+	text-decoration: none
+}
