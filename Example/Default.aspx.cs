@@ -20,7 +20,7 @@ namespace Example
             n1.Type = NodeType.Start;
 
             Node n2 = new Node();
-            n2.Name = "Hunger";
+            n2.Name = "I'm hungry";
             n2.Type = NodeType.State;
 
             Node n3 = new Node();
@@ -32,7 +32,7 @@ namespace Example
             n4.Type = NodeType.Normal;
 
             Node n5 = new Node();
-            n5.Name = "Call apu";
+            n5.Name = "Call Apu Nahasapeemapetilon";
             n5.Type = NodeType.Normal;
 
             Node n6 = new Node();
@@ -40,7 +40,7 @@ namespace Example
             n6.Type = NodeType.End;
 
             Node n7 = new Node();
-            n7.Name = "Apu is too busy taking care of is childrens";
+            n7.Name = "Apu is too busy taking care of is 8 childrens";
             n7.Type = NodeType.Normal;
 
             nodelist.Add(n1);
@@ -55,12 +55,12 @@ namespace Example
             Relationship r1 = new Relationship();
             r1.Name = "1";
             r1.Source = "Start";
-            r1.Target = "Hunger";
+            r1.Target = "I'm hungry";
             r1.RelationshipType = RelationshipType.Simple;
 
             Relationship r2 = new Relationship();
             r2.Name = "2";
-            r2.Source = "Hunger";
+            r2.Source = "I'm hungry";
             r2.Target = "Buy food?";
             r2.RelationshipType = RelationshipType.Dependency;
 
@@ -74,15 +74,15 @@ namespace Example
             Relationship r4 = new Relationship();
             r4.Name = "4";
             r4.Source = "Buy food?";
-            r4.Target = "Call apu";
+            r4.Target = "Call Apu Nahasapeemapetilon";
             r4.Comment = "Yes";
             r4.RelationshipType = RelationshipType.Comment;
 
 
             Relationship r5 = new Relationship();
             r5.Name = "5";
-            r5.Source = "Call apu";
-            r5.Target = "Apu is too busy taking care of is childrens";
+            r5.Source = "Call Apu Nahasapeemapetilon";
+            r5.Target = "Apu is too busy taking care of is 8 childrens";
             r5.RelationshipType = RelationshipType.Simple;
 
             Relationship r6 = new Relationship();
@@ -94,14 +94,14 @@ namespace Example
 
             Relationship r7 = new Relationship();
             r7.Name = "8";
-            r7.Source = "Apu is too busy taking care of is childrens";
+            r7.Source = "Apu is too busy taking care of is 8 childrens";
             r7.Target = "Starve";
             r7.RelationshipType = RelationshipType.Simple;
 
             Relationship nota = new Relationship();
             nota.Name = "nota";
-            nota.Note = "This is a tricky situation..\r\n i must call master yoda and ask for is opinion!";
-            nota.Source = "Hunger";
+            nota.Note = "Those aren't the droids you're looking for move along..";
+            nota.Source = "I'm hungry";
             nota.Target = "End";
             nota.RelationshipType = RelationshipType.Note;
 

@@ -81,6 +81,9 @@ namespace NomNomlNet
                     case '\"':
                         sb.Append("\\\"");
                         break;
+                    case '\'':
+                        sb.Append("\\\'");
+                        break;
                     case '\\':
                         sb.Append("\\\\");
                         break;
